@@ -135,3 +135,116 @@ img {
   background: var(--red);
   color: var(--white);
 }
+.technology {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 60px;
+}
+.section-technology {
+  /* width: 1181px; */
+  height: 198px;
+  padding-left: 155px;
+  margin-bottom: 150px;
+}
+.technology-header {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+  color: var(--light-black);
+}
+.technology-item {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--light-black);
+}
+.technology-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 32px;
+}
+/* section smile */
+.section-smile {
+  background-color: var(--light);
+}
+.smile-section {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--red);
+  padding-top: 154px;
+}
+.smile-header {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  color: var(--black);
+  margin-top: 20px;
+}
+
+.smile-item {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--black);
+  margin-top: 30px;
+}
+.smile-list {
+  padding: 100px 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+.smile-image {
+  border-radius: 10px;
+}
+.align-start {
+  margin-top: 100px;
+}
+.smile-clients {
+  padding: 100px;
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: center;
+}
+.quantity {
+  font-family: "El Messiri", sans-serif;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--light-black);
+  display: inline-flex;
+  align-items: flex-start;
+}
+.plus {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--red);
+  position: relative;
+  top: 2px;
+}
+.quantity-item {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--red);
+}
