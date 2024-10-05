@@ -452,4 +452,68 @@ img {
   padding: 30px;
   width: 340px;
   height: 254px;
+  margin-top: -100px;
+  background-color: var(--white);
+}
+.team-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.personal-name {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+  color: var(--black);
+}
+.personal-profession {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--red);
+}
+.personal-description {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--black);
+}
+.brand-section {
+  background-color: var(--light);
+  padding: 5px 147px 112px;
+}
+.brand-header {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--light-black);
+  text-align: center;
+}
+.brand-logo {
+  display: flex;
+  gap: 56px;
+}
+.appointment-section {
+  padding: 80px 132px;
+}
+.appointment-header {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--light-black);
+  text-align: center;
+}
+.appointment-item {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--light-black);
 }
