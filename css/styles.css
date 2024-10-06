@@ -5,6 +5,8 @@
   --black: #000;
   --light-black: #2e333e;
   --light: #f9f7f4;
+  --light-grey: #e3e3e3;
+  --light-brown: #828282;
 }
 h1,
 h2,
@@ -92,6 +94,7 @@ img {
   /* gap: 30px;
   display: block; */
 }
+
 .container-general-four {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
@@ -107,6 +110,10 @@ img {
   line-height: 1;
   color: var(--light-black);
   margin-bottom: 30px;
+}
+.line {
+  display: block;
+  margin: 1px;
 }
 .container-general-p {
   font-family: "Nunito", sans-serif;
@@ -516,4 +523,126 @@ img {
   font-size: 24px;
   text-align: center;
   color: var(--light-black);
+}
+.appointment-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 80px;
+  padding: 60px 120px;
+  border-bottom: 1px solid lightgray;
+}
+.appointment-list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.appointment-icon-header {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+  color: var(--black);
+}
+.appointment-icon-item {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--black);
+}
+.appointment-icon-link {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--red);
+  text-decoration: none;
+}
+.registration-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 65px;
+  padding: 40px 132px 80px;
+}
+.registration-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 30px;
+}
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.registration-label {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--light-black);
+}
+.registration-input {
+  margin-bottom: 30px;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  padding: 21px 20px;
+  width: 253px;
+  height: 55px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--light-brown);
+}
+.registration-textarea {
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  padding: 15px 20px;
+  width: 669px;
+  height: 89px;
+  color: var(--light-brown);
+}
+.registration-button {
+  border-radius: 8px;
+  padding: 15px 30px;
+  width: 669px;
+  height: 55px;
+  border: 1px solid var(--dark-red);
+  color: var(--dark-red);
+  background: var(--light);
+  margin-top: 20px;
+}
+.registration-button:hover,
+.registration-button:active {
+  background: var(--red);
+  color: var(--white);
+}
+/* footer */
+.footer {
+  height: 94px;
+  background-color: var(--red);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0px;
+  padding: 25px 130px;
+}
+.footer-item {
+  color: var(--white);
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 20px;
+  width: 200px;
+  height: 24px;
+  margin-top: 10px;
 }
