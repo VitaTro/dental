@@ -28,6 +28,11 @@
         width: 1680px;
         max-height: 6917px;
       }
+      .is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
     </style>
   </head>
   <body>
@@ -80,7 +85,13 @@
               Discover a level of dental care like no other
             </p>
             <div class="buttons">
-              <button class="button">Book an Appointment</button>
+              <button
+                class="button headline-main-button"
+                type="button "
+                data-modal-open
+              >
+                Book an Appointment
+              </button>
               <button class="button">Browse our service</button>
             </div>
           </div>
@@ -91,6 +102,9 @@
               height="605"
               alt="Happy Dark Woman Smiling"
             />
+            <svg class="icon-curve">
+              <use href="./images/icons.svg#icon-curve"></use>
+            </svg>
           </div>
         </div>
       </section>
@@ -418,8 +432,8 @@
             <img
               src="./images/Maria.png"
               class="team-leader"
-              width="373"
-              height="401"
+              width="393"
+              height="441"
               alt=""
             />
             <div class="team-personal">
@@ -436,8 +450,8 @@
             <img
               src="./images/Darla.png"
               class="team-leader"
-              width="373"
-              height="401"
+              width="393"
+              height="441"
               alt=""
             />
             <div class="team-personal">
@@ -453,8 +467,8 @@
             <img
               src="./images/Josh.png"
               class="team-leader"
-              width="373"
-              height="401"
+              width="393"
+              height="441"
               alt=""
             />
             <div class="team-personal">
@@ -624,5 +638,45 @@
         </li>
       </ul>
     </footer>
+
+    <!-- APPOINTMENT MODAL-->
+    <div class="is-hidden modal" data-modal>
+      <button type="button" class="modal-windows-close" data-modal-close>
+        <svg class="modal-svg" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div>
+        <div>
+          <form name="registration-form" autocomplete="on" novalidate>
+            <label for="name"> Name</label>
+            <input type="text" name="username" placeholder="Full Name" />
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="email@example.com"
+            />
+          </form>
+          <form name="phone-form" autocomplete="on" novalidate>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" placeholder="(12) 345-6789" />
+            <label for="text">Service </label>
+            <input type="text" name="text" placeholder="Ex. Dental Implants" />
+          </form>
+        </div>
+
+        <form action="textarea-form">
+          <label for="text">Message</label>
+          <textarea
+            name="feedback"
+            placeholder="Please describe what service you are interested in"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/appointment.js"></script>
   </body>
 </html>
